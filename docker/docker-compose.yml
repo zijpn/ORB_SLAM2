@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  orbslam:
+    build: .
+    image: orbslam
+    container_name: orbslam
+    hostname: orbslam
+    environment:
+    - DISPLAY=:0
+    volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
