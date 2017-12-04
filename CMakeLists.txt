@@ -96,6 +96,11 @@ add_executable(stereo_euroc
 Examples/Stereo/stereo_euroc.cc)
 target_link_libraries(stereo_euroc ${PROJECT_NAME})
 
+add_executable(stereo_live
+Examples/Stereo/stereo_live.cc)
+target_link_libraries(stereo_live ${PROJECT_NAME})
+
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 
 add_executable(mono_tum
